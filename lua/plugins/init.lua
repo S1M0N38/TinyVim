@@ -2,15 +2,10 @@ local plugins = {
   { lazy = true, "nvim-lua/plenary.nvim" },
 
   {
-    "EdenEast/nightfox.nvim",
+    "folke/tokyonight.nvim",
+    lazy = false,
     priority = 1000,
-    config = function()
-      require("nightfox").setup {
-        groups = {
-          all = { VertSplit = { fg = "bg3" } },
-        },
-      }
-    end,
+    opts = {},
   },
 
   -- file tree
